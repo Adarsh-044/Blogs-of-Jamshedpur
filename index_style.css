@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    margin: 0px 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.logo {
+    margin: 2px 0px 0px 20px;
+}
+
+.logo a img {
+    border-radius: 51px;
+    height: 70px;
+    width: 152px;
+}
+
+.logo a img:hover {
+    transform: scale(1.05);
+}
+
+#navbar ul {
+    font-family: 'Baloo Bhai', cursive;
+    display: flex;
+    font-size: 1.3rem;
+    width: 697px;
+    margin: 0px 10px 0px 401px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 25px;
+}
+
+.item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 0px 0px 0px;
+    transform: scale(1.15);
+}
+
+.item {
+    list-style: none;
+    font-weight: bold;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home ::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(rgba(23, 45, 23, 0.2), rgba(32, 23, 42, 0.1)), url(./images/new_building.jpg);
+    background-size: 100vw;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.h-primary {
+    margin: 22px 0px 30px 30px;
+    color: #03c9fa;
+    font-size: 47px;
+    background-color: rgba(23, 45, 23, 0.5);
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.btn {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.2rem;
+    background-color: rgb(123, 123, 252);
+    color: white;
+    border-radius: 25px;
+    margin: 50px 0px 0px 34px;
+    border: 2px solid black;
+    width: 257px;
+    height: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-image: linear-gradient(white, skyblue);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    align-items: center;
+}
+
+#about::before {
+    content: "";
+    background-image: linear-gradient(#a9f1c5 20%, #bcf8bc 30%);
+    position: absolute;
+    top: 100vh;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#heading_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(162, 253, 215, 0.671);
+    width: 336px;
+    border-radius: 200px 200px 0px 0px;
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+#heading_about:hover {
+    background-image: linear-gradient(white, skyblue);
+    color: black;
+}
+
+.about-dis {
+    margin: 20px 30px;
+    font-family: 'Besley', serif;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+}
+
+#Acedemics::before {
+    content: "";
+    background-image: linear-gradient(#a9f1c5 20%, #bcf8bc 30%);
+    position: absolute;
+    top: 200vh;
+    left: 0px;
+    width: 100vw;
+    height: 190vh;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.acehead {
+    display: flex;
+    align-items: center;
+    font-size: 47px;
+    margin: 25px;
+    justify-content: center;
+    color: blue;
+}
+
+.aboutAcedemics {
+    margin: 20px 50px;
+    font-family: 'Besley', serif;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 18px;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 25px 0px 8px;
+    justify-content: center;
+    color: black;
+}
+
+.subcourse {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 1px;
+    justify-content: center;
+    color: black;
+}
+
+.courses1 {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.courses2 {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.courses1 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin: 17px 148px 0px 142px;
+}
+
+#Acedemics ul li:hover {
+    color: black;
+    transform: scale(1.2);
+    background-image: linear-gradient(white, skyblue);
+    border-radius: 65px;
+    font-weight: bold;
+}
+
+.courses2 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    margin: 16px -1px 0px 77px;
+}
+
+#Contact div {
+    display: flex;
+    margin: 7px 23px 5px 113px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 2px;
+    justify-content: center;
+    align-items: center;
+}
